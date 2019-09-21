@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CSS/Libs/bootstrap.css">
+    <link rel="stylesheet" href="CSS/Inicio.css">
+    <title>Lista del mandado</title>
+</head>
+<body >
+   
+        <div class="container-fluid">
+                <div class="d-flex vh-100">
+                    <div class="card mx-auto my-auto" style="width: 40rem;">
+                        <div class="card-body">
+                                <form class="text-monospace">
+                                        <div class="text-center" >  
+                                            <image src="Recursos/lista.ico" class="rounded mx-auto d-block" height="100 px" alt=""><br>
+                                            <h1>MI LISTA DE SUPER</h1>
+                                            <span>Controla, comparte, disfruta y compra, todo para tu despensa</span> <br><br>
+                                        </div>                                       
+                                </form>
+
+                                <form class="card-body">
+                                 <div class="form-group">
+                                        <div class="col-md-12 order-md-2 mb-4" >
+                                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                              <span class="text-muted">Mi carrito</span>
+                                              <span class="badge badge-secondary badge-pill conteo">3</span>
+                                            </h4>
+                                            <form>
+                                                <div class="form-group">
+                                              <div class="input-group">
+                                                <input type="text" name="producto" id="producto" class="form-control" placeholder="Producto" onInput="validarInput()">
+                                                <div class="input-group-append">
+                                                  <button type="button" id="btn-agregar" class="btn btn-primary" disabled="disabled" >Agregar</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            </form>
+                                            <ul id="lista" class="list-group mb-3 ">
+                                              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                                <div>
+                                                  <h6 class="my-0">6 kg de papa</h6>
+                                                </div>
+                                                <form class="botones">
+                                                    <div class="form-row">
+                                                      <div class="col">
+                                                          <a href="#" class="btn btn-danger btn-lg btn-delete" role="button">⚠️</a>
+                                                      </div>
+                                                      <div class="col">
+                                                          <a href="#" class="btn btn-success btn-lg btn-add" role="button">✔</a>
+                                                      </div>
+                                                    </div>
+                                                  </form>
+                                              </li>
+                                             
+                                              <li class="list-group-item d-flex justify-content-between bg-light">
+                                                <div class="text-success">
+                                                  <h6 class="my-0">2 philadelphia</h6>
+                                                </div>
+                                                <span class="text-success">DONE</span>
+                                              </li>
+                                              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                                <div>
+                                                  <h6 class="my-0">5 lts. leche</h6>
+                                                </div>
+                                                <form>
+                                                    <div class="form-row">
+                                                      <div class="col">
+                                                          <a href="#"  class="btn btn-danger btn-lg btn-delete" role="button">⚠️</a>
+                                                      </div>
+                                                      <div class="col">
+                                                          <a href="#" class="btn btn-success btn-lg btn-add" role="button">✔</a>
+                                                      </div>
+                                                    </div>
+                                                  </form>
+                                              </li>
+                                            </ul>
+                                      
+                                          </div>  
+                                    </form>
+                                
+                                          </div>
+                                                </div>
+                </div>
+        </div>     
+        <script src="JS/Index.js"></script> 
+</body>
+</html>
